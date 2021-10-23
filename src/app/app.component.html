@@ -1,0 +1,46 @@
+﻿<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    </div>
+</nav>
+
+<!-- main app container -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <alert></alert>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- credits -->
+<div class="text-center">
+    <h2>Angular 7 - User Registration and Login</h2>
+    <h2>Resources</h2>
+    <h4>Welcome to Resources, Here are some educational resources...Happy Learning!!!</h4>
+</div>
+
+<div class="info">
+    <dl>
+        <dt>>>W3 SCHOOLS</dt>
+        <dd>-----W3Schools is a freemium educational website for learning coding online. Developed in 1998, its name is derived from the World Wide Web.<br> It is run by Refsnes Data in Norway.
+            <a href="https://www.w3schools.com/" target="_blank">Visit Site Here.</a></dd>
+        <dt>>>GEEKS FOR GEEKS</dt>
+        <dd>------A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and programming articles,<br> discussion forums <a href="https://www.geeksforgeeks.org/" target="_blank">Visit Site Here.</a></dd>
+        <dt>>>IEEE COMPUTER SOCIETY</dt>
+        <dd>-----This society is the world’s oldest and largest association of people in computing, and offers a multitude of information about conferences, standards, education, and careers.
+            <a href="https://www.computer.org/" target="_blank">Visit Site Here.</a></dd>
+    </dl>
+</div>
+
+<div class="text-center">
+    <h2>FreeJun Incorporation - Internship Task</h2>
+    <h4>Angular 7 - User Registration and Login, Resource Page</h2>
+        <h5>Thank you</h5>
+        <h5>Made with &hearts; by Pavan Kumar Kundeti</h5>
+</div>
